@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo img{
+    width: 150px;
+    object-fit: contain;
+}
+.text h1{
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.879);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.padding-right{
+    padding-right: 1.2rem;
+}
+.padding-right-1{
+    padding-right: 0.8rem;
+}
+
+
+section {
+    padding: 30px 0;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .section-title {
+    text-align: center;
+    padding-bottom: 30px;
+    position: relative;
+  }
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  
+  .section-bg {
+    padding: 120px 0;
+    color: #fff;
+    background-color: black;
+    transform: skewY(-3deg);
+  }
+
+  .bg{
+    background-image: url(../Image/Agriculture.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+  }

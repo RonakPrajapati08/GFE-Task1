@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    overflow-y: hidden;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    width: 33%;
+}
+
+body {
+    /* display: grid; */
+    place-items: center;
+    background-color: wheat;
+}
+
+.logo img{
+    width: 150px;
+    object-fit: contain;
+}
+
+.padding-right{
+    padding-right: 1.5rem;
+}
+
+.slider {
+    /* height: 250px; */
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.slide-track {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    animation-name: scroll;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-duration: 10s;
+}
+
+.box {
+    height: 100vh;
+    /* width: 100%; */
+    overflow: hidden;
+    background-color: rgba(132, 234, 101, 0.651);
+    /* background-image: url(../Image/Agriculture.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-50%);
+    }
+}
+
+.slide {
+    min-height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* padding: 15px; */
+    perspective: 100px;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+    transform: scale(.9);
+    transition: ease-in-out 1s;
+}
+
+img:hover {
+    transform: scale(1);
+}
+
+.navbar-toggler-icons {
+    display: inline-block !important;
+    width: 1.5em !important;
+    height: 1.5em !important;
+    vertical-align: middle !important;
+    content: "" !important;
+    /* background: no-repeat center center; */
+    background-size: 100% 100% !important;
+  }
